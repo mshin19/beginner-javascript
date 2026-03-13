@@ -12,6 +12,16 @@
   <script>
     if (10 > 2) {
       console.log('Yep');
+    } else if(11>10) {
+      console.log('Hey');
+    }
+
+    function slugify(sentence, lowercase) {
+      if (lowercase) {
+        return sentence.replace(/\s/g, '-').toLowerCase();
+      } else {
+        return sentence.replace(/\s/g, '-');
+      }
     }
   </script>
 </body>
