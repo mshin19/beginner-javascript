@@ -129,6 +129,34 @@
       Looping Methods
     */
 
+    toppings.forEach((item, index, array) => console.log(item, index, array));
+
+    // Map, filter and reduce
+    console.clear();
+
+    function addArms(face) {
+      return `<--${face}-->`;
+    }
+
+    function findByProp(prop, propWeAreLookingFor) {
+      return function isStudent(student) {
+        return student[prop] === propWeAreLookingFor;
+      }
+    }
+    const student = students.find(findByProp('id', '565a'));
+    console.log(student);
+
+    console.clear();
+
+    //Reduce!
+    function inventoryReducer(totals, item) {
+      totals[item.type] = (totals[item.type] || 0) + 1;
+      return totals;
+    }
+
+    const inventoryCounts = inventory.reduce(inventoryReducer, {});
+    console.log(inventoryCounts);
+
   </script>
 </body>
 
