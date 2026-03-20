@@ -2,7 +2,6 @@
   "name": "beginner-javascript",
   "version": "1.0.0",
   "description": "Starter Files and Solutions for the BeginnerJavaScript.com Course",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wesbos/beginner-javascript.git"
