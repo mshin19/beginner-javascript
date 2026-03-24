@@ -2,13 +2,13 @@
   "name": "slider",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "parcel index.html"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
     "sass": "^1.23.3"
   },
   "dependencies": {
