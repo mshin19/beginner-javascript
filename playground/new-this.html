@@ -9,7 +9,41 @@
 </head>
 
 <body>
+  <button class="one">Button 1</button>
+  <button class="two">Button 2</button>
 
+  <script>
+    const myDate = new Date ('March 24, 2026');
+    
+    function Pizza(toppings = [], customer) {
+      console.log('Making a pizza...');
+      //save the toppings that were passed in, to this instance of pizza
+      this.toppings = toppings;
+      this.customer = customer;
+      this.id = Math.floor(Math.random()*1677215).toString(16);
+    }
+
+    const pepperoniPizza = new Pizza(['pepperoni'], 'Miguel');
+    //console.log(pepperoniPizza);
+    //console.log(pepperoniPizza.constructor);
+    //console.log(pepperoniPizza instanceof Pizza);
+
+    // const button1 = document.querySelector('.one');
+    // const button2 = document.querySelector('.two');
+
+    // function tellMeAboutTheButton() {
+    //   console.log('outside', this);
+    //   setTimeout(function() {
+    //     console.log('inside', this);
+    //     this.textContent = 'You clicked Me';
+    //   }, 1000);
+    // }
+
+    // button1.addEventListener('click', tellMeAboutTheButton);
+    // button2.addEventListener('click', tellMeAboutTheButton);
+
+
+  </script>
 </body>
 
 </html>
