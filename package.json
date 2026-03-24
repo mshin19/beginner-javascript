@@ -11,5 +11,9 @@
   "bugs": {
     "url": "https://github.com/wesbos/beginner-javascript/issues"
   },
-  "homepage": "https://github.com/wesbos/beginner-javascript#readme"
+  "homepage": "https://github.com/wesbos/beginner-javascript#readme",
+  "dependencies": {
+    "parcel": "^2.16.4",
+    "sass": "^1.98.0"
+  }
 }
