@@ -12,6 +12,10 @@
   <script>
     function makePizza(toppings) {
       const pizzaPromise = new Promise(function(resolve, reject) {
+        //reject if people try with pineapple
+        if(toppings.includes('pineapple')) {
+          reject('Seriously? Get out!');
+        }
         //wait 1 second for pizza to cook
         setTimeout(function() {
           resolve(`Here is your pizza with ${toppings.join(' ')}`);
@@ -22,14 +26,22 @@
       return pizzaPromise;
     }
 
-    const pepperoniPromise = makePizza(['pepperoni']);
-    const mexicanPromise = makePizza(['jalapenos', 'tocino']);
-    console.log(pepperoniPromise, mexicanPromise);
+    // const pepperoniPromise = makePizza(['pepperoni']);
+    // const mexicanPromise = makePizza(['jalapenos', 'tocino']);
+    
+    // console.log(pepperoniPromise, mexicanPromise);
 
-    pepperoniPromise.then(function(pizza) {
-      console.log('got it');
+    // pepperoniPromise.then(function(pizza) {
+    //   console.log('got it');
+    //   console.log(pizza);
+    // });
+
+    makePizza(['ham', 'pineapple'])
+    .then(pizza => {
       console.log(pizza);
-    });
+    }).catch(err => {
+      console.log(err);
+    })
   </script>
 </body>
 
