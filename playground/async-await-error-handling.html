@@ -32,6 +32,17 @@
       });
     }
 
+    function handleError(err) {
+      console.log(err);
+    }
+
+    async function go() {
+        const pizza = await makePizza(['pineapple']);
+        console.log(pizza);
+        return pizza;
+    }
+
+    go().catch(handleError);
   </script>
 </body>
 
