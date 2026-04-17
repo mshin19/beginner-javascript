@@ -1,0 +1,24 @@
+{
+  "name": "npmmodules",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "await-to-js": "^3.0.0",
+    "axios": "^1.15.0",
+    "date-fns": "^4.1.0",
+    "lodash": "^4.18.1",
+    "waait": "^1.0.5"
+  },
+  "browserslist": [
+    "last 1 chrome versions"
+  ]
+}
